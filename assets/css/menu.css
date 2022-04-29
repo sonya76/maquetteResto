@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Playfair";
+    src: url(../font/PlayfairDisplay-Regular.ttf);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+nav > div {
+  margin-left: 2rem;
+}
+/* ul avec id headerMenu */
+#headerMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* le margin peu prendre 4 valeurs pour haut right bas left */
+  margin: 0 1rem 0 1rem;
+}
+
+#headerMenu > li {
+  list-style: none;
+  padding: 1rem;
+}
+
+#headerMenu a {
+ text-decoration: none;
+ color:black;
+}
+#headerMenu > li:hover{
+    background-color: rgba(128, 128, 128, 0.137);
+    cursor: pointer;
+}
