@@ -22,26 +22,30 @@ h3 {
   display: flex;
   align-items: flex-end;
 }
+
 #headerImg h1 {
   margin: 2rem;
   color: #555d60;
   font-weight: 100;
   letter-spacing: 0.2rem;
 }
-#about, #menu{
+#about,
+#menu {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 2rem auto;
 }
-#about > div {
+#about > div, #menu > div {
   width: 48%;
 }
-#about img, #menu img{
+#about img,
+#menu img {
   width: 100%;
 }
 #about h2,
-#about h3, #menu h2 {
+#about h3,
+#menu h2 {
   text-align: center;
 }
 #about p:last-child {
@@ -51,19 +55,20 @@ h3 {
   background-color: #f1f1f1;
   padding: 0.2rem;
 }
-#menu p, #contact p{
+#menu p,
+#contact p {
   color: #555d60;
   font-size: 0.7rem;
 }
-#contact{
+#contact {
   width: 80%;
   margin: 2rem auto;
 }
-#contact .adresse{
-  color:#555d60;
+#contact .adresse {
+  color: #555d60;
   font-weight: 600;
 }
-#contact input{
+#contact input {
   width: 100%;
   border-top: none;
   border-left: none;
@@ -72,13 +77,37 @@ h3 {
   margin: 0.5rem 0;
   padding: 0.05rem;
 }
-#contact .formBtn{
+#contact .formBtn {
   border: none;
   width: fit-content;
 }
-#footer{
+#footer {
   display: flex;
   justify-content: center;
-  background-color:#0000000e;
+  background-color: #0000000e;
   padding: 2rem 0;
+}
+@media screen and (max-width: 576px) {
+  #headerImg {
+    height: 15vh;
+  }
+  #headerImg h1 {
+    margin: 0.9rem;
+    font-size: 1rem;
+  }
+  #about {
+   flex-direction: column-reverse;
+  }
+  #menu {
+    flex-direction: column;
+  }
+  #about,#menu,#contact {
+    width: 95%;
+  }
+  #about > div, #menu > div {
+    width: 100%;
+  }
+  #footer h5{
+    font-size: 0.5;
+  }
 }

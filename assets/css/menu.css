@@ -1,12 +1,11 @@
 @font-face {
-    font-family: "Playfair";
-    src: url(../font/PlayfairDisplay-Regular.ttf);
+  font-family: "Playfair";
+  src: url(../font/PlayfairDisplay-Regular.ttf);
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
 }
 nav > div {
   margin-left: 2rem;
@@ -26,10 +25,15 @@ nav > div {
 }
 
 #headerMenu a {
- text-decoration: none;
- color:black;
+  text-decoration: none;
+  color: black;
 }
-#headerMenu > li:hover{
-    background-color: rgba(128, 128, 128, 0.137);
-    cursor: pointer;
+#headerMenu > li:hover {
+  background-color: rgba(128, 128, 128, 0.137);
+  cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  #headerMenu {
+    display: none;
+  }
 }
